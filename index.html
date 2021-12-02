@@ -8,9 +8,39 @@
     <meta name="description" content="A simple Front-end to predict the gender of a person given their name">
     <meta name="author" content="Morteza Mirzai">
 
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div id="middle-box" class="column">
+        <div class="row">
+            <form class="column" id="req_form">
+                <h2>Mr. or Ms.?</h2>
+                <label> Name: 
+                    <input name="name" pattern="[a-zA-Z ]+" maxlength="255" autocomplete="given-name" />
+                </label>
+                <label> Gender: 
+                    <input name="gender" type="radio" value="Male"/><label for="male">Male</label>
+                    <input name="gender" type="radio" value="Female"/><label for="female">Female</label>
+                </label>
+                <button type="submit">Submit</button>
+                <button type="button" id="save_bt">Save</button>
+            </form>
+            <div class="column">
+                <div>
+                    <h2>Prediction</h2>
+                    <p>gender: <span id="gender_result"></span></p>
+                    <p>probability: <span id="probability_result"></span></p>
+                </div>
+        
+                <div id="saved_ans">
+                    <h2>Saved Answer</h2>
+                    <span></span>
+                    <button id="clear_bt">clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

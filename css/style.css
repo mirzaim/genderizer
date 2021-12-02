@@ -1,0 +1,43 @@
+
+/* set page background to body tag */
+body {
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: auto;
+}
+
+/* flex column style */
+.column {
+    display: flex;
+    flex-flow: wrap column;
+    gap: 0.8em;
+    margin: 10px;
+}
+
+/* flex row style */
+.row {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+}
+
+/* styles for middle box */
+#middle-box {
+    position: relative;
+    border-radius: 25px;
+    width: fit-content;
+    max-width: 500px;
+    margin: 200px auto 0px; 
+    padding: 5px 25px 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* general style for saved answer box */
+#saved_ans {
+    padding: 0px 20px 10px;
+    border-style: dotted;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
