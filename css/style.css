@@ -7,6 +7,17 @@ body {
     overflow: auto;
 }
 
+/* fit button to its content */
+button {
+    width: max-content;
+}
+
+/* make all images match their parents length */
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 /* flex column style */
 .column {
     display: flex;
@@ -31,6 +42,15 @@ body {
     margin: 200px auto 0px; 
     padding: 5px 25px 10px;
     background: rgba(255, 255, 255, 0.8);
+}
+
+/* font color and styles for status box */
+#status {
+    width: 70%;
+    height: 1.5em;
+    margin: auto;
+    color: brown;
+    text-align: center;
 }
 
 /* general style for saved answer box */
